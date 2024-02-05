@@ -1,0 +1,131 @@
+/* styles.css */
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Make navbar inline */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Change font to Roboto */
+body,
+nav a {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Add classes attributes to HTML */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #333;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* nav design */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.hero .btn.red {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.hero .btn.red:hover {
+  background-color: #c82333;
+}
+
+.hero .btn.blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hero .btn.blue:hover {
+  background-color: #0069d9;
+}
+
+.hero iframe {
+  width: 50%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.hero .stand-1,
+.hero .stand-2 {
+  width: 10px;
+  height: 60px;
+  background-color: #333;
+  position: absolute;
+}
+
+.hero .stand-1 {
+  left: -6px;
+  top: 20px;
+  transform: rotate(30deg);
+}
+
+.hero .stand-2 {
+  right: -6px;
+  top: 20px;
+  transform: rotate(-30deg);
+}
